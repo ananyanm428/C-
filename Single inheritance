@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+class Student
+{
+  public:
+  void display() {
+   cout << "This is the base class (Student)." << 
+}
+};
+class Result : public Student {
+public:
+void show() {
+  cout << "This is the derived class (Result)." << endl;
+ }
+};
+int main() {
+   Result obj;
+   obj.display();
+   obj.show();    
+ return 0;
+}
