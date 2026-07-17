@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class Sample {
+private:
+  int num;
+  public:
+  Sample() {
+  num = 10;
+ }
+friend void display(Sample);
+};
+void display(Sample s) {
+   cout << "Value of num = " << s.num << endl;
+}
+int main() {
+  Sample obj;
+  display(obj);
+  return 0;
+}
